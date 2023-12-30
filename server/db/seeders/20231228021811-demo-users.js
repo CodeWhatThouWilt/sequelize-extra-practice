@@ -10,16 +10,19 @@ const users = [
         username: "demo",
         email: "demo@test.io",
         hashedPassword: "password",
+        bio: "Just a demo account",
     },
     {
         username: "tester",
         email: "test@test.io",
         hashedPassword: "password123",
+        bio: "Test account",
     },
     {
         username: "dev",
         email: "dev@test.io",
         hashedPassword: "securePassword",
+        bio: "Ayyyye dev time",
     },
 ];
 

@@ -8,7 +8,7 @@ const {
 const chai = setupChai();
 const expect = chai.expect;
 
-describe("Post Specs", async () => {
+describe("Phase 2 Migrations - Post Specs", async () => {
     let DB_TEST_FILE, models, server;
 
     before(

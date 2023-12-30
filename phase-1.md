@@ -1,4 +1,4 @@
-# Users
+# Phase 1 - Users
 
 In phase 1 you'll be creating the Users model/migration and adding the proper validations/constraints
 
@@ -62,11 +62,11 @@ npm test test/phase-01-migrations.js
 
 Create a seeder file with the name `demo-users` and then create 3 seeds with the following data:
 
-| username |    email     | hashedPassword |
-| :------: | :----------: | :------------: |
-|   demo   | demo@test.io |    password    |
-|  tester  | test@test.io |  password123   |
-|   dev    | dev@test.io  | securePassword |
+| username |    email     | hashedPassword |         bio         |
+| :------: | :----------: | :------------: | :-----------------: |
+|   demo   | demo@test.io |    password    | Just a demo account |
+|  tester  | test@test.io |  password123   |    Test account     |
+|   dev    | dev@test.io  | securePassword |   Ayyyye dev time   |
 
 You can test your seeders by running:
 

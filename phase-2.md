@@ -1,4 +1,4 @@
-# Posts
+# Phase 2 - Posts
 
 In phase 2 you'll be creating the Posts model/migration and adding the proper validations/constraints
 

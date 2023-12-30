@@ -8,7 +8,7 @@ const {
 const chai = setupChai();
 const expect = chai.expect;
 
-describe("User Specs", async () => {
+describe("Phase 1 Migrations - User Specs", async () => {
     let DB_TEST_FILE, models, server;
 
     before(
@@ -28,6 +28,7 @@ describe("User Specs", async () => {
                 username: "testuser",
                 email: "testuser@test.io",
                 hashedPassword: "testpassword",
+                bio: "test bio",
             };
         });
 
@@ -36,6 +37,7 @@ describe("User Specs", async () => {
                 username: "testuser",
                 email: "testuser@test.io",
                 hashedPassword: "testpassword",
+                bio: "test bio",
             };
         });
 

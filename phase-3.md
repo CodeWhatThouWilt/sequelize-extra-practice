@@ -1,4 +1,4 @@
-# Posts
+# Phase 3 - Comments
 
 In phase 3 you'll be creating the comments model/migration and adding the proper validations/constraints
 

@@ -13,7 +13,7 @@ const {
 const chai = setupChai();
 const expect = chai.expect;
 
-describe("Demo Users", () => {
+describe("Phase 1 Seeders - Demo Users", () => {
     let DB_TEST_FILE, models, server, seedFile;
 
     before(async () => {
@@ -41,16 +41,19 @@ describe("Demo Users", () => {
                 username: "demo",
                 email: "demo@test.io",
                 hashedPassword: "password",
+                bio: "Just a demo account",
             },
             {
                 username: "tester",
                 email: "test@test.io",
                 hashedPassword: "password123",
+                bio: "Test account",
             },
             {
                 username: "dev",
                 email: "dev@test.io",
                 hashedPassword: "securePassword",
+                bio: "Ayyyye dev time",
             },
         ];
 
@@ -61,6 +64,7 @@ describe("Demo Users", () => {
             expect(user).to.not.be.undefined;
             expect(user.email).to.equal(expectedUser.email);
             expect(user.hashedPassword).to.equal(expectedUser.hashedPassword);
+            expect(user.bio).to.equal(expectedUser.bio);
         });
     });
 

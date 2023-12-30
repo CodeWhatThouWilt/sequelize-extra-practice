@@ -13,7 +13,7 @@ const {
 const chai = setupChai();
 const expect = chai.expect;
 
-describe("Post seeders", () => {
+describe("Phase 2 Seeders - Post seeders", () => {
     let DB_TEST_FILE, models, server, seedFile;
 
     before(async () => {

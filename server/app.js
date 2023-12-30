@@ -22,6 +22,21 @@ app.get("/", (req, res) => {
         message: "API server is running",
     });
 });
+
+app.use((req, res, next) => {
+    const err = new Error("Not Found");
+    err.status = 404;
+    next(err);
+});
+
+app.use((err, req, res, next) => {
+    res.statusCode = err.status || 500;
+
+    return res.json({
+        message: err.message,
+    });
+});
+
 // Set port and listen for incoming requests - DO NOT MODIFY
 if (require.main === module) {
     const port = process.env.PORT;
